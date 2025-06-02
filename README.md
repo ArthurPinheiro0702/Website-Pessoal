@@ -1,4 +1,1 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ifeTtGzV)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=19590407)
-
-Website pessoal feito com ajuda do YouTube, fazendo esse projeto acabei revendo e aprendendo várias coisas, como as funções, efeito digitando no JavaScript, arrow functions e ícone para navegação mobile, praticando algumas coisas no CSS, como grid, hover e até keyframes. No futuro quero adicionar uma página para meus projetos. Cometi um erro ao não comentar cada linha de código quando eu estava escrevendo o código, então, utilizei ajuda do ChatGPT para comentar linha por linha do meu CSS, espero que não haja problema.
+Website pessoal feito para trabalho da faculdade.
