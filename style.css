@@ -1,0 +1,427 @@
+/* Importa a fonte Poppins do Google Fonts com vários pesos */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset de estilos padrão para todos os elementos */
+* {
+    padding: 0; /* Remove o espaçamento interno padrão */
+    margin: 0; /* Remove o espaçamento externo padrão */
+    box-sizing: border-box; /* Inclui padding e border no cálculo das dimensões */
+    list-style: none; /* Remove estilos de lista */
+    text-decoration: none; /* Remove sublinhados de links */
+}
+
+/* Estilos gerais do corpo */
+body {
+    background-color: #000; /* Fundo preto */
+    max-width: 1200px; /* Largura máxima de 1200px */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #000; /* Fundo preto */
+    padding: 10px; /* Espaçamento interno */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: space-around; /* Espaça itens com espaço igual */
+}
+
+/* Título do cabeçalho */
+header h1 {
+    color: #dc3545; /* Cor vermelha */
+    font-size: 2.5rem; /* Tamanho grande */
+}
+
+/* Imagem dentro da section-div */
+.section-div img {
+    max-width: 100%; /* Imagem não ultrapassa o tamanho do container */
+}
+
+/* Estilo para span no título */
+header span {
+    color: beige; /* Cor bege */
+}
+
+/* Navegação principal do cabeçalho */
+header .nav-primaria {
+    display: flex; /* Layout flexível */
+    gap: 10px; /* Espaçamento entre itens */
+    align-items: center; /* Alinhamento vertical ao centro */
+}
+
+/* Links da navegação */
+header .nav-primaria li a {
+    padding: 10px; /* Espaçamento interno */
+    color: #fff; /* Cor branca */
+    font-size: 1.3rem; /* Tamanho médio */
+}
+
+/* Seção principal */
+.section-div {
+    animation: inicializar .7s forwards; /* Animação ao carregar */
+    background-color: #000; /* Fundo preto */
+    display: grid; /* Layout de grid */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de mesma largura */
+    justify-content: space-around; /* Espaçamento horizontal */
+    align-items: center; /* Alinhamento vertical ao centro */
+    gap: 60px; /* Espaçamento entre colunas */
+    padding: 60px; /* Espaçamento interno */
+}
+
+
+/* Efeito de cursor piscando na classe digitando */
+.digitando::after {
+    content: '|'; /* Adiciona um caractere de barra */
+    margin-left: 3px; /* Espaço à esquerda */
+    opacity: 1; /* Totalmente visível */
+    animation: pisca .9s infinite; /* Animação de piscar infinita */
+}
+
+/* Estilo para o div dentro de section-div */
+.section-div div {
+    margin-top: 120px; /* Margem superior */
+    align-self: start; /* Alinha ao início do container */
+    display: grid; /* Layout de grid */
+    gap: 30px; /* Espaçamento entre itens */
+}
+
+/* Título h2 dentro do div de section-div */
+.section-div div h2 {
+    font-family: "Poppins", "sans-serif"; /* Fonte personalizada */
+    font-weight: 400; /* Peso da fonte leve */
+    font-size: 60px;
+    color: #f7f7f7; /* Cor branca suave */
+
+}
+
+/* Parágrafos dentro de section-div */
+.section-div div p {
+    font-family: "Poppins", "sans-serif"; /* Fonte personalizada */
+    color: #f7f7f7; /* Cor branca suave */
+    font-size: 1.4rem;
+}
+
+/* Animação de entrada inicial */
+@keyframes inicializar {
+    from {
+        opacity: 0; /* Totalmente transparente */
+        transform: translate3d(0, -60px, 0); /* Move para cima */
+    }
+    to {
+        opacity: 1; /* Totalmente opaco */
+        transform: translate3d(0, 0, 0); /* Volta à posição original */
+    }
+}
+
+/* Animação de piscar */
+@keyframes pisca {
+    from {
+        opacity: 1; /* Visível */
+    }
+    to {
+        opacity: 0; /* Invisível */
+    }
+}
+
+/* Estilo geral do main */
+main {
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+}
+
+/* Seção sobre */
+main .sobre {
+    margin-top: 60px; /* Margem superior */
+    display: grid; /* Layout de grid */
+    grid-template-columns: 1fr 1fr 1fr; /* Três colunas iguais */
+    gap: 30px; /* Espaçamento entre colunas */
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 40px; /* Espaçamento interno */
+}
+
+/* Título da seção sobre */
+.sobre_titulo {
+    margin: 5px 0; /* Margem vertical */
+    grid-column: 1/-1; /* Ocupa todas as colunas */
+    text-align: center; /* Alinhamento central */
+    color: #fff; /* Cor branca */
+}
+
+/* h1 dentro de sobre_titulo */
+.sobre_titulo h1 {
+    font-size: 2.5rem; /* Tamanho grande */
+    color: #dc3545; /* Cor vermelha */
+    margin-bottom: 15px; /* Espaço inferior */
+    font-family: "Poppins" "sans-serif"; /* Fonte personalizada */
+}
+
+/* Parágrafo dentro de sobre_titulo */
+.sobre_titulo p {
+    color: #707070; /* Cinza claro */
+    font-size: 1.4rem; /* Tamanho médio */
+    margin-bottom: 1.5rem; /* Espaço inferior */
+    position: relative; /* Para posicionamento de elementos */
+}
+
+/* Container dos spans decorativos */
+.sobre_titulo div {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento horizontal */
+    gap: 10px; /* Espaçamento entre spans */
+}
+
+/* Estilo dos spans */
+.sobre_titulo span {
+    display: grid; /* Layout grid */
+    height: 25px; /* Altura fixa */
+    width: 25px; /* Largura fixa */
+    border-radius: 50%; /* Bordas arredondadas */
+    background-color: #dc3545; /* Cor vermelha */
+}
+
+/* Ícones dentro dos spans */
+.sobre_titulo span i {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Imagem da seção sobre */
+.sobre img {
+    cursor: pointer; /* Muda o cursor ao passar */
+    grid-row: 2; /* Ocupa segunda linha */
+    max-width: 105%; /* Pode ultrapassar o container levemente */
+    border-radius: 4px; /* Bordas arredondadas */
+    filter: blur(0); /* Sem desfoque inicialmente */
+}
+
+/* Efeito hover na imagem */
+.sobre img:hover {
+    transition: .5s ease-in; /* Transição suave */
+    filter: blur(0.5px); /* Aplica leve desfoque */
+}
+
+/* Container do conteúdo sobre */
+.sobre_conteudo {
+    grid-column: 2/-1; /* Ocupa colunas 2 até o fim */
+    display: grid; /* Layout de grid */
+    color: #707070; /* Cinza claro */
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+}
+
+/* Texto dentro do conteúdo sobre */
+.sobre_texto {
+    font-size: 1.5rem; /* Tamanho grande */
+    display: grid; /* Layout de grid */
+    grid-column: 1/-1; /* Ocupa todas as colunas */
+    color: #fff; /* Cor branca */
+}
+
+/* Span dentro de sobre_texto */
+.sobre_texto h1 span {
+    color: #dc3545; /* Cor vermelha */
+}
+
+/* Parágrafo dentro de sobre_texto */
+.sobre_texto p {
+    font-size: 1.3rem; /* Tamanho médio */
+    grid-row: 2; /* Segunda linha */
+    grid-column: 1/-1; /* Ocupa todas as colunas */
+}
+
+/* Informações dentro da seção sobre */
+.sobre_info {
+    margin-top: 30px; /* Margem superior */
+    font-family: "Poppins"; /* Fonte personalizada */
+    display: grid; /* Layout de grid */
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    grid-column: 1/-1; /* Ocupa todas as colunas */
+    gap: 15px; /* Espaçamento entre itens */
+}
+
+/* Ícones dentro de sobre_info */
+.sobre_info i {
+    color: #dc3545; /* Cor vermelha */
+    display: inline-block; /* Mantém alinhamento */
+    padding-right: 15px; /* Espaço à direita */
+    font-size: 1.2rem; /* Tamanho pequeno */
+}
+
+/* Parágrafos dentro de sobre_info */
+.sobre_info p {
+    font-size: 1rem; /* Tamanho padrão */
+    font-family: "Poppins" "sans-serif"; /* Fonte personalizada */
+    background-color: #000000; /* Fundo preto */
+    color: whitesmoke; /* Cor clara */
+}
+
+/* Links dentro de sobre_info */
+.sobre_info p a {
+    color: whitesmoke; /* Cor clara */
+}
+
+/* RESPONSIVIDADE */
+
+/* Para telas menores que 992px */
+@media(max-width: 992px) {
+    .section-div img {
+        display: none; /* Esconde a imagem */
+    }
+
+    .section-div {
+        background-image: url(./img/foto.jpg); /* Imagem de fundo */
+        background-repeat: no-repeat; /* Não repete */
+        background-size: cover; /* Cobre toda a área */
+    }
+
+    header {
+        justify-content: space-between; /* Alinhamento entre itens */
+    }
+
+    header .nav-primaria {
+        display: none; /* Esconde a navegação padrão */
+        padding: 10px 20px; /* Espaçamento interno */
+    }
+
+    header i {
+        color: #f7f7f7; /* Cor branca suave */
+        font-size: 3rem; /* Tamanho grande */
+    }
+
+    header .nav-primaria.ativado {
+        background: linear-gradient(rgba(43,42,42,0.176), rgba(46,46,46,0.724)); /* Gradiente */
+        position: absolute; /* Posicionamento absoluto */
+        display: grid; /* Layout grid */
+        top: 53px; /* Distância do topo */
+        color: white; /* Texto branco */
+        z-index: 1; /* Sobreposição */
+        padding: 30px; /* Espaçamento interno */
+        font-size: 1.6rem; /* Tamanho médio */
+        font-weight: bold; /* Negrito */
+        border-radius: 0 0 4px 4px; /* Bordas arredondadas na base */
+        right: 20px; /* Distância da direita */
+    }
+
+    .sobre img {
+        grid-column: 1/-1; /* Ocupa todas as colunas */
+        justify-self: center; /* Centraliza */
+    }
+
+    .sobre_conteudo {
+        grid-column: 1/-1; /* Ocupa todas as colunas */
+    }
+}
+
+/* SECÃO SOBRE MIM!!! */
+
+/* Container geral */
+.sobre_mim {
+    padding: 60px; /* Espaçamento interno */
+    margin-top: -30px; /* Sobreposição */
+    background-color: #000000; /* Fundo preto */
+}
+
+/* Conteúdo da seção sobre mim */
+.mais_sobre_mim {
+    padding: 50px; /* Espaçamento interno */
+    color: #707070; /* Cinza claro */
+}
+
+/* Lista dentro da seção */
+.mais_sobre_mim ul {
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Quebra de linha */
+    gap: 20px; /* Espaçamento entre itens */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento horizontal */
+}
+
+/* Efeito hover nos itens */
+.mais_sobre_mim ul li:hover {
+    background-color: #292929; /* Fundo mais claro */
+    transition: .7s ease-in-out; /* Transição suave */
+}
+
+/* Itens da lista */
+.mais_sobre_mim ul li {
+    padding: 20px; /* Espaçamento interno */
+    position: relative; /* Posicionamento relativo */
+    display: grid; /* Layout de grid */
+    gap: 20px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto */
+    max-width: 300px; /* Largura máxima */
+    height: 300px; /* Altura fixa */
+    background-color: #222; /* Fundo cinza escuro */
+    border-radius: 10px; /* Bordas arredondadas */
+    align-content: center; /* Centraliza conteúdo */
+}
+
+/* Título dentro do item */
+.mais_sobre_mim ul li h3 {
+    color: #fff; /* Branco */
+    font-size: 1.6rem; /* Tamanho médio */
+    font-family: "Poppins"; /* Fonte personalizada */
+    font-weight: 200; /* Peso leve */
+}
+
+/* Ícone dentro do item */
+.mais_sobre_mim ul li i {
+    font-size: 2.9rem; /* Tamanho grande */
+    color: #dc3545; /* Vermelho */
+}
+
+/* Texto dentro do item */
+.mais_sobre_mim ul li p {
+    color: #707070; /* Cinza claro */
+    font-size: 1rem; /* Tamanho padrão */
+}
+
+/* Texto do rodapé */
+.footer p {
+    justify-content: center; /* Centraliza */
+    display: flex; /* Layout flexível */
+    margin-top: 10px; /* Espaçamento superior */
+    color: #707070; /* Cinza claro */
+}
+
+/* Estilo geral do rodapé */
+footer {
+    background-color: #000000; /* Fundo preto */
+    padding: 20px; /* Espaçamento interno */
+    color: white; /* Texto branco */
+}
+
+/* Lista de ícones do rodapé */
+.footer ul {
+    color: #707070; /* Cinza claro */
+    display: flex; /* Layout flexível */
+    gap: 30px; /* Espaçamento entre itens */
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    font-size: 1.5rem; /* Tamanho médio */
+}
+
+/* Links dentro do rodapé */
+.footer a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #707070; /* Cinza claro */
+}
+
+/* Efeito hover nos links do rodapé */
+.footer a:hover {
+    color: #ffffff; /* Fica branco */
+    transition: .3s ease-in-out; /* Transição suave */
+}
+
+
+
+
+
+
+
+
+
+
+
+

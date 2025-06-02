@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Meu Portfólio</title> 
+    <link rel="stylesheet" href="style.css">
+    <!-- Importa o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header com menu de navegação -->
+    <header>
+        <h1>Arthur<span> D. Pinheiro</span></h1>
+        <nav>
+            <ul class="nav-primaria">
+                <li><a href="#home">Home</a></li> <!-- Links para redirecionamento dentro da página -->
+                <li><a href="#about">Sobre</a></li> 
+                <li><a href="#contato">Contato</a></li> 
+                <li><a href="#sobre-site">Sobre o Site</a></li> 
+            </ul>
+            <i class="fa-solid fa-bars"></i> <!-- Ícone de menu para navegação mobile -->
+        </nav>
+    </header>
+
+    <!-- Seção principal de apresentação -->
+    <section class="section-div" id="home">
+        <div>
+            <h2>Olá! Sou</h2>
+            <h2 class="digitando">Arthur Dall Agnol Pinheiro</h2> <!-- Classe usada para o efeito de digitação no JavaScript -->
+            <p>Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UPF - Passo Fundo, e trabalhando como assistente de suporte técnico no departamento de TI da Cerfox Coop e Distr de Energia de Fontoura Xavier</p>
+        </div>
+        <img src="./img/foto.jpg" alt="Foto do Inosuke"> <!-- Imagem com descrição -->
+    </section>
+
+    <main>
+        <!-- Seção sobre mim -->
+        <article class="sobre" id="about">
+            <div class="sobre_titulo">
+                <h1>Sobre Mim</h1>
+                <p>Perfil Profissional - Tudo sobre mim</p>
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span> <!-- Bolinhas para decorar -->
+                </div>
+            </div>
+
+            <img src="./img/inosuke.jpg" alt="Foto Minha"> 
+
+            <div class="sobre_conteudo">
+                <div class="sobre_texto" id="contato">
+                    <h1>Sou <span>Arthur</span></h1>
+                    <p>Me chamo Arthur Dall Agnol Pinheiro, tenho 18 anos moro em Fontoura Xavier, RS. A tecnologia sempre esteve presente no meu cotidiano desde quando eu era apenas uma criança curiosa, lembro quando perguntei para meus pais como o computador fazia todas aquelas coisas e não souberam me responder. Foi aí que tudo começou, a vontade de descobrir como as coisas funcionam. Na faculdade estou podendo ter um melhor entendimento sobre esse mundo.</p>
+                </div>
+
+                <!-- Informações pessoais -->
+                <div class="sobre_info">
+                    <p><i class="fa-solid fa-calendar-days"></i>07/02/2007</p> 
+                    <p><i class="fa-solid fa-location-dot"></i>Fontoura Xavier, RS, Brasil</p> 
+                    <p><i class="fa-sharp fa-solid fa-globe"></i>Português, espanhol, inglês</p> 
+                    <p><i class="fa-solid fa-flag"></i>Brasileiro</p> 
+                    <p><i class="fa-solid fa-phone-volume"></i>54 ****-****</p> 
+                    <p><i class="fa-solid fa-envelope"></i>test@gmail.com</p> 
+                    <p><i class="fa-brands fa-linkedin"></i>Arthur Dall Agnol Pinheiro</p> 
+                    <p><a href="https://github.com/dal-org/dev-web-av-2-port-ArthurPinheiro0702" target="_blank"><i class="fa-brands fa-github"></i>Repositório GitHub</a></p>
+                </div>
+            </div>
+        </article>
+    </main>
+<!-- Mais informações -->
+    <section class="informações" id="infos">
+        <div class="sobre_titulo">
+            <h1>Sobre Mim</h1>
+            <p>Onde trabalho, linguagens de programação, meu objetivo para o futuro, e como o site foi feito.</p>
+            <div>
+                <span><i class="fa-solid fa-desktop"></i></span> <!-- Ícones do Fontawesome -->
+                <span><i class="fa-brands fa-python"></i></span> 
+                <span><i class="fa-brands fa-redhat"></i></span> 
+                <span><i class="fa-solid fa-question"></i></span> 
+            </div>
+        </div>
+
+        <div class="mais_sobre_mim">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3>Emprego</h3>
+                    <p>Sou assistente de suporte técnico no departamento de TI da Cerfox Coop e Distr De Energia de Fontoura Xavier.</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Linguagens</h3>
+                    <p>Atualmente estou estudando e aperfeiçoando as minhas habilidades em Python e JavaScript na faculdade, e também, desenvolvendo projetos como esse.</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-redhat"></i>
+                    <h3>Objetivo</h3>
+                    <p>Meu objetivo no momento, é trabalhar na área de cibersegurança, protegendo redes, dispositivos e sistemas de ameaças cibernéticas. Estou começando meus estudos na área, recentemente terminei o curso "Arquitetura de Redes" do autor Gabriel Torres e agora estou estudando a pilha de protocólos TCP/IP.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-question" id="sobre-site"></i>
+                    <h3>Como foi feito?</h3>
+                    <p>O site foi feito com HTML5, CSS3 e JavaScript, inicialmente era somente para uma TDE da faculdade, porém, ao decorrer do projeto percebi que aprendi várias técnicas importantes e úteis na programação Front-End.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="https://wa.me/54XXXX-XXXX" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/arthur-dall-agnol-pinheiro-b04285357/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li> 
+                <li><a href="https://www.instagram.com/arthuurdp/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://x.com/flickreyli?t=Hxt-VJLZajyvymxOWegeBg&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <p>2025 &copy; Arthur Dall Agnol Pinheiro | All Rights Reserved</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
